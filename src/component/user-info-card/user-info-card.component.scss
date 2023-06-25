@@ -1,0 +1,32 @@
+:host {
+    display       : flex;
+    flex-direction: column;
+    margin        : 10px 0;
+
+    h3 {
+        color: purple;
+    }
+
+    .red {
+        color: red;
+        font-weight: 600;
+    }
+
+    .blue {
+        color: blue;
+        font-weight: 600;
+    }
+
+    .green {
+        color: green;
+        font-weight: 600;
+    }
+
+    .table {
+
+        th,
+        td {
+            border: 0;
+        }
+    }
+}

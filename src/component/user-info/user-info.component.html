@@ -1,0 +1,30 @@
+<div class="card">
+    <div class="title-action">
+        <h3>User Info Component</h3>
+
+        <button type="button" (click)="update()">update</button>
+    </div>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>First Name</td>
+                <td>{{firstName}}</td>
+            </tr>
+
+            <tr>
+                <td>Last Name</td>
+                <td>{{lastName}}</td>
+            </tr>
+
+            <tr>
+                <td>Birthdate</td>
+                <td>{{birthdate}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <app-user-document-view class="user-meta"></app-user-document-view>
+
+    <app-user-contact-view class="user-meta"></app-user-contact-view>
+</div>

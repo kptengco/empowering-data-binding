@@ -1,0 +1,31 @@
+<div class="card">
+    <h3>User Contact View Component (Child Component)</h3>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <ng-container *ngFor="let col of cols">
+                    <th>{{col}}</th>
+                </ng-container>
+            </tr>
+        </thead>
+    
+        <tbody>
+            <ng-container *ngFor="let contact of list">
+                <tr>
+                    <td>{{contact.description}}</td>
+                    <td>{{contact.phone}}</td>
+                    <td>{{contact.email}}</td>
+                </tr>
+            </ng-container>
+    
+            <ng-container *ngIf="noContact">
+                <tr>
+                    <td [attr.colspan]="cols.length" class="text-center">
+                        No record
+                    </td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</div>

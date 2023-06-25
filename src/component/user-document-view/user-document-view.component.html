@@ -1,0 +1,30 @@
+<div class="card">
+    <h3>User Document View Component (Child Component)</h3>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <ng-container *ngFor="let col of cols">
+                    <th>{{col}}</th>
+                </ng-container>
+            </tr>
+        </thead>
+    
+        <tbody>
+            <ng-container *ngFor="let document of list">
+                <tr>
+                    <td>{{document.documentType}}</td>
+                    <td>{{document.description}}</td>
+                </tr>
+            </ng-container>
+    
+            <ng-container *ngIf="noDocument">
+                <tr>
+                    <td [attr.colspan]="cols.length" class="text-center">
+                        No record
+                    </td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</div>

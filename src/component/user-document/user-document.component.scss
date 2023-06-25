@@ -1,0 +1,15 @@
+:host {
+    display       : flex;
+    flex-direction: column;
+    margin        : 10px 0;
+
+    .title-action {
+        align-items: center;
+        color      : yellowgreen;
+        display    : flex;
+
+        button {
+            margin-left: 20px;
+        }
+    }
+}

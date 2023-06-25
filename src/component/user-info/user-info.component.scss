@@ -1,0 +1,21 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+
+    .title-action {
+        align-items: center;
+        color: red;
+        display: flex;
+
+        button {
+            margin-left: 20px;
+        }
+    }
+
+    .user-meta {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+}
